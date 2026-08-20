@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portofolio — ImBangoon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .pgrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+      }
+      @media (max-width: 768px) {
+        .pgrid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="wrap">
+        <div class="logo-wrap">
+          <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 48 48" fill="none">
+              <path d="M6 24 L24 8 L42 24" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12 21 V40 H36 V21" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+              <rect x="19" y="26" width="10" height="14" stroke="currentColor" stroke-width="2.2" />
+              <circle cx="24" cy="5.5" r="4.5" fill="#C9A227" />
+            </svg>
+            <span>ImBangoon</span>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="portofolio.html" class="active">Portofolio</a></li>
+          <li><a href="harga-layanan.html">Harga &amp; Layanan</a></li>
+          <li><a href="tentang-kami.html">Tentang Kami</a></li>
+        </ul>
+        <button class="nav-burger" onclick="document.getElementById('mmenu').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+      <div class="mobile-menu" id="mmenu">
+        <a href="index.html">Beranda</a>
+        <a href="portofolio.html" class="active">Portofolio</a>
+        <a href="harga-layanan.html">Harga &amp; Layanan</a>
+        <a href="tentang-kami.html">Tentang Kami</a>
+      </div>
+    </nav>
+
+    <section class="section" style="padding-bottom: 0">
+      <div class="wrap section-head" style="margin-bottom: 40px">
+        <div class="sheet-code">Portofolio Kami</div>
+        <h1 style="font-family: var(--font-d); font-weight: 600; font-size: 38px">Portofolio Proyek Kami</h1>
+        <p class="desc">Kumpulan rumah yang sudah kami bangun dan rancang — lengkap dengan spesifikasi utama tiap proyek.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0">
+      <div class="wrap">
+        <div class="filter-bar">
+          <button class="filter-trigger" id="filterTrigger" type="button" aria-expanded="false">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+              <line x1="4" y1="7" x2="20" y2="7" />
+              <line x1="7" y1="12" x2="17" y2="12" />
+              <line x1="10" y1="17" x2="14" y2="17" />
+            </svg>
+            <span id="filterTriggerLabel">Filter: Semua</span>
+            <svg class="chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="filter-row" id="filterRow">
+            <span class="pill active" data-label="Semua">Semua</span>
+            <span class="pill" data-label="Terbangun">Terbangun</span>
+            <span class="pill" data-label="Desain 3D">Desain 3D</span>
+            <span class="pill" data-label="Rumah 1 Lantai">Rumah 1 Lantai</span>
+            <span class="pill" data-label="Rumah 2 Lantai">Rumah 2 Lantai</span>
+          </div>
+        </div>
+
+        <div class="pgrid">
+          <a class="pcard" href="portofolio-detail.html">
+            <div class="proj-card-media">
+              <span class="proj-tag">Terbangun</span>
+              <div class="proj-float has-cta">
+                <h3>Rumah Yudha — Malang</h3>
+                <div class="meta">120 m² · 3 KT · 2 KM · 1 Lantai</div>
+                <span class="proj-cta-inline">Lihat Detail Spesifikasi →</span>
+              </div>
+            </div>
+          </a>
+          <a class="pcard" href="portofolio-detail.html">
+            <div class="proj-card-media">
+              <span class="proj-tag">Terbangun</span>
+              <div class="proj-float has-cta">
+                <h3>Rumah Puji — Surabaya</h3>
+                <div class="meta">90 m² · 2 KT · 1 KM · 1 Lantai</div>
+                <span class="proj-cta-inline">Lihat Detail Spesifikasi →</span>
+              </div>
+            </div>
+          </a>
+          <a class="pcard" href="portofolio-detail.html">
+            <div class="proj-card-media">
+              <span class="proj-tag">Terbangun</span>
+              <div class="proj-float has-cta">
+                <h3>Rumah Yemima — Batu</h3>
+                <div class="meta">150 m² · 4 KT · 3 KM · 2 Lantai</div>
+                <span class="proj-cta-inline">Lihat Detail Spesifikasi →</span>
+              </div>
+            </div>
+          </a>
+          <a class="pcard" href="portofolio-detail.html">
+            <div class="proj-card-media">
+              <span class="proj-tag">Desain 3D</span>
+              <div class="proj-float has-cta">
+                <h3>Konsep Modern Tropis</h3>
+                <div class="meta">105 m² · 3 KT · 2 KM · 1 Lantai</div>
+                <span class="proj-cta-inline">Lihat Detail Spesifikasi →</span>
+              </div>
+            </div>
+          </a>
+          <a class="pcard" href="portofolio-detail.html">
+            <div class="proj-card-media">
+              <span class="proj-tag">Desain 3D</span>
+              <div class="proj-float has-cta">
+                <h3>Konsep Minimalis Industrial</h3>
+                <div class="meta">80 m² · 2 KT · 1 KM · 1 Lantai</div>
+                <span class="proj-cta-inline">Lihat Detail Spesifikasi →</span>
+              </div>
+            </div>
+          </a>
+          <a class="pcard" href="portofolio-detail.html">
+            <div class="proj-card-media">
+              <span class="proj-tag">Desain 3D</span>
+              <div class="proj-float has-cta">
+                <h3>Konsep Dua Lantai Kontemporer</h3>
+                <div class="meta">180 m² · 4 KT · 3 KM · 2 Lantai</div>
+                <span class="proj-cta-inline">Lihat Detail Spesifikasi →</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <div>
+            <div class="footer-logo">
+              <svg class="logo-icon" viewBox="0 0 48 48" fill="none">
+                <path d="M6 24 L24 8 L42 24" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 21 V40 H36 V21" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+                <rect x="19" y="26" width="10" height="14" stroke="currentColor" stroke-width="2.2" />
+                <circle cx="24" cy="5.5" r="4.5" fill="#C9A227" />
+              </svg>
+              <span>ImBangoon</span>
+            </div>
+            <p class="desc-f">Jasa rancang bangun rumah yang menawarkan pengalaman membangun rumah impian dengan pelayanan engineering yang lengkap dan terintegrasi.</p>
+          </div>
+          <div>
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="portofolio.html">Portofolio</a></li>
+              <li><a href="harga-layanan.html">Harga &amp; Layanan</a></li>
+              <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Layanan</h4>
+            <ul>
+              <li><a href="#">Desain Rumah</a></li>
+              <li><a href="#">Perencanaan Struktur</a></li>
+              <li><a href="#">Pembangunan Rumah</a></li>
+              <li><a href="#">Interior</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Kontak</h4>
+            <ul>
+              <li>0812-3456-7890</li>
+              <li>halo@imbangoon.id</li>
+              <li>Malang, Jawa Timur</li>
+            </ul>
+            <div class="social" style="margin-top: 18px"><a href="#">IG</a><a href="#">FB</a><a href="#">TT</a></div>
+          </div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 PT Imbangoon Karya Indonesia</span><span>Desain &amp; Konstruksi Rumah</span></div>
+      </div>
+    </footer>
+
+    <a href="#" class="wa-float"
+      ><svg viewBox="0 0 24 24">
+        <path
+          d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.44 1.32 4.94L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.79 14.02c-.24.68-1.4 1.3-1.94 1.38-.5.08-1.12.11-1.8-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.17-1.55-1.17-2.96 0-1.4.74-2.09 1-2.38.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.42-.07.65.5.24.58.81 2 .88 2.15.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.19-.27.37-.22.62-.13.25.09 1.6.75 1.87.89.27.14.45.21.52.33.07.12.07.68-.17 1.35z" />
+      </svg>
+    </a>
+
+    <style>
+      .mobile-menu {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: var(--paper);
+        border-bottom: 1px solid var(--line);
+        flex-direction: column;
+        padding: 20px 22px;
+        gap: 18px;
+        z-index: 49;
+        transform: translateY(-8px);
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.18s;
+      }
+      .mobile-menu.open {
+        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .mobile-menu a {
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--ink);
+      }
+      .mobile-menu a.active {
+        color: var(--yellow-deep);
+        font-weight: 700;
+      }
+      .pcard {
+        display: block;
+      }
+    </style>
+    <script>
+      // Filter Portofolio — tombol (mobile) yang membuka pilihan filter
+      (function () {
+        var trigger = document.getElementById("filterTrigger");
+        var row = document.getElementById("filterRow");
+        var label = document.getElementById("filterTriggerLabel");
+        if (!trigger || !row) return;
+
+        trigger.addEventListener("click", function () {
+          var isOpen = row.classList.toggle("open");
+          trigger.classList.toggle("active", isOpen);
+          trigger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
+
+        row.querySelectorAll(".pill").forEach(function (pill) {
+          pill.addEventListener("click", function () {
+            row.querySelectorAll(".pill").forEach(function (p) {
+              p.classList.remove("active");
+            });
+            pill.classList.add("active");
+            if (label) label.textContent = "Filter: " + pill.dataset.label;
+            // tutup dropdown setelah memilih (mobile)
+            row.classList.remove("open");
+            trigger.classList.remove("active");
+            trigger.setAttribute("aria-expanded", "false");
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

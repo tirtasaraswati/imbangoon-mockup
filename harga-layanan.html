@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Harga &amp; Layanan — ImBangoon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .addon-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: var(--line);
+      }
+      .addon-card {
+        background: var(--paper);
+        padding: 26px 24px;
+      }
+      .addon-card b {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      .addon-card span {
+        color: var(--yellow-deep);
+        font-size: 12.5px;
+        font-weight: 500;
+      }
+      @media (max-width: 768px) {
+        .addon-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="wrap">
+        <div class="logo-wrap">
+          <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 48 48" fill="none">
+              <path d="M6 24 L24 8 L42 24" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12 21 V40 H36 V21" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+              <rect x="19" y="26" width="10" height="14" stroke="currentColor" stroke-width="2.2" />
+              <circle cx="24" cy="5.5" r="4.5" fill="#C9A227" />
+            </svg>
+            <span>ImBangoon</span>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="portofolio.html">Portofolio</a></li>
+          <li><a href="harga-layanan.html" class="active">Harga &amp; Layanan</a></li>
+          <li><a href="tentang-kami.html">Tentang Kami</a></li>
+        </ul>
+        <button class="nav-burger" onclick="document.getElementById('mmenu').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+      <div class="mobile-menu" id="mmenu">
+        <a href="index.html">Beranda</a>
+        <a href="portofolio.html">Portofolio</a>
+        <a href="harga-layanan.html" class="active">Harga &amp; Layanan</a>
+        <a href="tentang-kami.html">Tentang Kami</a>
+      </div>
+    </nav>
+
+    <section class="section" style="padding-bottom: 60px">
+      <div class="wrap section-head center">
+        <div class="sheet-code">Harga &amp; Layanan</div>
+        <h1 style="font-family: var(--font-d); font-weight: 700; font-size: 38px">Paket Rancang Bangun</h1>
+        <p class="desc">Pilih paket sesuai kebutuhan — dari desain saja sampai pengawasan konstruksi penuh. Semua harga dihitung per meter persegi bangunan.</p>
+      </div>
+
+      <div class="wrap">
+        <div class="price-grid">
+          <div class="price-card">
+            <div class="price-name">Paket Eksterior</div>
+            <div class="price-amount">Rp50.000</div>
+            <span class="price-unit">per m² bangunan</span>
+            <ul class="price-list">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 6" /></svg>Denah 2D
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 6" /></svg>Visualisasi 3D (depan, samping, mata burung)
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 6" /></svg>Rencana tampak depan 3D
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 6" /></svg>Tampak 2D
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 6" /></svg>Gambar detail arsitektur
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 6" /></svg>Rencana pondasi
+              </li>
+            </ul>
+            <a href="#" class="btn btn--outline btn--block">Pilih Paket</a>
+          </div>
+          <div class="price-card featured">
+            <div class="price-badge">Best Seller</div>
+            <div class="price-name">Paket Utama</div>
+            <div class="price-amount">Rp125.000</div>
+            <span class="price-unit">per m² bangunan</span>
+            <ul class="price-list">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 6" /></svg>Semua isi Paket Eksterior
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 6" /></svg>Detail penulangan sloof, balok &amp; kolom
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 6" /></svg>Rencana atap &amp; plafon
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 6" /></svg>Rencana instalasi listrik dasar
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 6" /></svg>Perhitungan RAB lengkap
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 6" /></svg>Pengawasan berkala 1x/bulan
+              </li>
+            </ul>
+            <a href="#" class="btn btn--onDark btn--block">Pilih Paket</a>
+          </div>
+          <div class="price-card">
+            <div class="price-name">Paket Premium</div>
+            <div class="price-amount">Rp175.000</div>
+            <span class="price-unit">per m² bangunan</span>
+            <ul class="price-list">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 6" /></svg>Semua isi Paket Utama
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 6" /></svg>Perencanaan interior dasar
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 6" /></svg>Rencana instalasi plumbing lengkap
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 6" /></svg>Pengawasan lapangan mingguan
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 6" /></svg>Laporan progres foto berkala
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 6" /></svg>Konsultasi prioritas &amp; garansi struktur
+              </li>
+            </ul>
+            <a href="#" class="btn btn--outline btn--block">Pilih Paket</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="wrap">
+        <div class="section-head" style="margin-bottom: 36px">
+          <div class="sheet-code">Layanan Tambahan</div>
+          <h2 style="font-size: 26px">Butuh Layanan Terpisah?</h2>
+        </div>
+        <div class="addon-grid">
+          <div class="addon-card"><b>Perhitungan RAB</b><span>Rp15.000 /m²</span></div>
+          <div class="addon-card"><b>Pengawasan Lapangan</b><span>Rp8.000.000 /bulan</span></div>
+          <div class="addon-card"><b>Jasa Interior</b><span>Sesuai kebutuhan ruang</span></div>
+          <div class="addon-card"><b>Renovasi &amp; Perbaikan</b><span>Survey gratis dahulu</span></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <div>
+            <div class="footer-logo">
+              <svg class="logo-icon" viewBox="0 0 48 48" fill="none">
+                <path d="M6 24 L24 8 L42 24" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 21 V40 H36 V21" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+                <rect x="19" y="26" width="10" height="14" stroke="currentColor" stroke-width="2.2" />
+                <circle cx="24" cy="5.5" r="4.5" fill="#C9A227" />
+              </svg>
+              <span>ImBangoon</span>
+            </div>
+            <p class="desc-f">Jasa rancang bangun rumah yang menawarkan pengalaman membangun rumah impian dengan pelayanan engineering yang lengkap dan terintegrasi.</p>
+          </div>
+          <div>
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="portofolio.html">Portofolio</a></li>
+              <li><a href="harga-layanan.html">Harga &amp; Layanan</a></li>
+              <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Layanan</h4>
+            <ul>
+              <li><a href="#">Desain Rumah</a></li>
+              <li><a href="#">Perencanaan Struktur</a></li>
+              <li><a href="#">Pembangunan Rumah</a></li>
+              <li><a href="#">Interior</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Kontak</h4>
+            <ul>
+              <li>0812-3456-7890</li>
+              <li>halo@imbangoon.id</li>
+              <li>Malang, Jawa Timur</li>
+            </ul>
+            <div class="social" style="margin-top: 18px"><a href="#">IG</a><a href="#">FB</a><a href="#">TT</a></div>
+          </div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 PT Imbangoon Karya Indonesia</span><span>Desain &amp; Konstruksi Rumah</span></div>
+      </div>
+    </footer>
+
+    <a href="#" class="wa-float"
+      ><svg viewBox="0 0 24 24">
+        <path
+          d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.44 1.32 4.94L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.79 14.02c-.24.68-1.4 1.3-1.94 1.38-.5.08-1.12.11-1.8-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.17-1.55-1.17-2.96 0-1.4.74-2.09 1-2.38.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.42-.07.65.5.24.58.81 2 .88 2.15.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.19-.27.37-.22.62-.13.25.09 1.6.75 1.87.89.27.14.45.21.52.33.07.12.07.68-.17 1.35z" />
+      </svg>
+    </a>
+
+    <style>
+      .mobile-menu {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: var(--paper);
+        border-bottom: 1px solid var(--line);
+        flex-direction: column;
+        padding: 20px 22px;
+        gap: 18px;
+        z-index: 49;
+        transform: translateY(-8px);
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.18s;
+      }
+      .mobile-menu.open {
+        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .mobile-menu a {
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--ink);
+      }
+      .mobile-menu a.active {
+        color: var(--yellow-deep);
+        font-weight: 700;
+      }
+    </style>
+  </body>
+</html>
